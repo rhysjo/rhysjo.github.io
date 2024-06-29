@@ -27,6 +27,9 @@
             <br>
             <a href="https://stripe.com/gb" target="_blank">Stripe.com | A good exmaple of Semantic Markup</a>
             <br>
+            <a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Emmet Shortcut Cheat-Sheet</a>
+            <br>
+
 
         </section>
 
@@ -134,7 +137,7 @@
             <h2><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">Semantic Elements</a></h2>
 
             <p>
-                Semantic elements offer no new functionality compared to the elements already available. They offer better readability and structure within the HTML code.
+                Semantic elements offer no new functionality compared to the elements already available. They offer better readability and structure within the HTML code. They're also beneficial for screen reader users.
             </p>
 
         </section>
@@ -155,6 +158,187 @@
             <h5>"&lt;h5&gt; This is a h5 tga &lt;/h5&gt;"</h5>
             <h6>"&lt;h6&gt; This is a h6 tag &lt;/h6&gt;"</h6>
 
+        </section>
+
+        <hr>
+
+        <section>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Table Elements</a></h2>
+
+            <h3>Heaviest Birds</h3>
+
+            <!-- table element defines a table -->
+            <table>
+                <!-- thead element represents the head of a table -->
+                <thead>
+                <!-- tr element represents a row in table -->
+                    <tr>
+                        <!-- th element represents table headers, must be nested in a tr as it's own row -->
+                        <th>Animal</th>
+                        <th>Avg Weight</th>
+                        <th>Max Weight</th>
+                        <th>Flighted</th>
+                    </tr>
+                </thead>
+                
+                <!-- tbody element represents the body of a table -->
+                <tbody>
+                    <tr>
+                        <!-- td element represents a cell in a table -->
+                        <td>Ostrich</td>
+                        <td>104 (230)</td>
+                        <td>156.8 (346)</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Somali Ostrich</td>
+                        <td>90 (200)</td>
+                        <td>130 (287)</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wild Turkey</td>
+                        <td>13.5 (29.8)</td>
+                        <td>39 (86)</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+
+                <!-- tfoot element represents the foot of a table, useful for accumulative values -->
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td><b>207.5 (459.8)</b></td>
+                        <td><b>325.8 (719)</b></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br><br>
+
+            <h3>Table with Spans</h3>
+
+            <table>
+                <!-- thead element represents the head of a table -->
+                <thead>
+                <!-- tr element represents a row in table -->
+                    <tr>
+                        <!-- th element represents table headers, must be nested in a tr as it's own row -->
+                        <!-- rowspan sets the number of rows the header occupies -->
+                        <!-- colspan sets the number of columns the header occupies -->
+                        <th rowspan="2">Animal</th>
+                        <th colspan="2">Average Mass</th>
+                        <th rowspan="2">Flighted</th>
+                    </tr>
+                    <tr>
+                        <th>KG</th>
+                        <th>LBS</th>
+                    </tr>
+                </thead>
+                
+                <!-- tbody element represents the body of a table -->
+                <tbody>
+                    <tr>
+                        <!-- td element represents a cell in a table -->
+                        <td>Ostrich</td>
+                        <td>104</td>
+                        <td>230</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Somali Ostrich</td>
+                        <td>90</td>
+                        <td>200</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wild Turkey</td>
+                        <td>13.5</td>
+                        <td>29.8</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+
+                <!-- tfoot element represents the foot of a table, useful for accumulative values -->
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td><b>207.5</b></td>
+                        <td><b>459.8</b></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">Form Elements</a></h2>
+
+            <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">Input Types</a></h3>
+
+            <!-- form element represents a document section containing interactive controls for submitting information -->
+            <!-- action attribute specifies where the form data should be sent to -->
+            <form action="">
+                
+                <p>
+                    <!-- label element creates a text label which can be linked to inputs -->
+                    <!-- id attribute links labels and inputs -->
+                    <label for="username">Enter your Username: </label>
+                    <!-- input element represents an input on the form, the type attribute changes the style of input -->
+                    <!-- placeholder attribute changes the placeholder text visible before typing into the input field -->
+                    <input id="username" type="text" placeholder="Username">
+                </p>
+                
+                <p>
+                    <label for="password">Enter your Password: </label>
+                    <input id="password" type="password" placeholder="Password">
+                </p>
+
+                <p>
+                    <label for="number">Enter a Number: </label>
+                    <input id="number" type="number" placeholder="Number">
+                </p>
+
+                <p>
+                    <label for="range">Specify the Range: </label>
+                    <input id="range" type="range">
+                </p>
+
+                <p>
+                    <label for="color">Select a Colour: </label>
+                    <input id="color" type="color">               
+                </p>
+
+                <p>
+                    <label for="radio">Select the Radio: </label>
+                    <input id="radio" type="radio">
+                </p>
+
+                <p>
+                    <!-- button element creates a button -->
+                    <!-- When clicked will direct to the specified action in the form tag, because it's part of the form -->
+                    <!-- type="button" specifies that the button should just act as a normal button and not submit the form -->
+                    <button type="button">Button Inside of Form</button>
+                    <!-- button element created from an input, set the text using value attribute -->
+                    <input type="submit" value="This is an input!">
+                </p>
+
+            </form>
+
+            <p>
+                <!-- buttons outside of a form will not submit to anywhere -->
+                <button>Button Outside of Form</button>
+            </p>
         </section>
 
         <hr>
