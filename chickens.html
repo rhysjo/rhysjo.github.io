@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     
 <head>
-    <title>Rhys O'Shea | Trainee Full Stack Developer | Portfolio</title>
+    <title>Rhys O'Shea | Trainee Full Stack Developer | Chickens</title>
 </head>
 
 <body>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="chickens.html">Chickens</a>        
+        <a href="index.html">Home |</a>
+        <a href="about.html">About |</a>
+        <a href="chickens.html">Chickens |</a>
+        <a href="race_registration.html">Race Registration</a>     
     </nav>
 
     <h1><a href="https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=PPINTENTP3" target="_blank">The Web Developer Bootcamp 2024</a></h1>
@@ -343,6 +344,61 @@
 
             <hr>
 
+            <h3>More Inputs</h3>
+
+            <form action="/birds">
+                
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">I agree to everything...</label>
+
+                <p>
+                    <!-- label is linked to radio button of id xs -->
+                    <label for="xs">XS: </label>
+                    <!-- radio buttons are linked via the name attribute -->
+                    <!-- value is what's sent to the server -->
+                    <input type="radio" name="size" id="xs" value="xs">
+                    <br>
+                    <label for="m">M: </label>
+                    <input type="radio" name="size" id="m" value="m">
+                    <br>
+                    <label for="l">L: </label>
+                    <input type="radio" name="size" id="l" value="l">
+                </p>
+
+                <p>
+                    <label for="meal">Please select a meal type</label>
+                    <!-- select tag create a drop down menu -->
+                    <select name="meal" id="meal">
+                        <!-- option tag creates a drop down menu item -->
+                        <option value="" selected>-- Please select one --</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                        <option value="option5">Option 5</option>
+
+                    </select>
+
+                </p>
+
+                <p>
+                    <label for="cheese">Amount of cheese</label>
+                    <input id="cheese" name="cheese" type="range" min="1" max="100" step="5">
+                </p>
+
+                <p>
+                    <label for="requests">Any special Requests?</label>
+                    <br>
+                    <!-- textarea is not an input -->
+                    <textarea id="requests" name="requests" placeholder="Enter some text here..." rows="10" cols="50"></textarea>
+                </p>
+
+                <button>Submit!</button>
+
+            </form>
+
+            <hr>
+
             <h2>"Hijacking" Google Search</h2>
 
             <!-- this form will redirect the search query to google -->
@@ -352,8 +408,39 @@
                 <button>Search Google</button>
 
             </form>
-
             
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>Validations</h2>
+
+            <form action="/dummy">
+
+                <label for="first">Enter first name</label>
+                <!-- The required attribute makes the input a mandatory field -->
+                <input type="text" name="first" id="first" required>
+                <p>
+                    <label for="username">Username</label>
+                    <!-- Can set min and max characters for an input -->
+                    <!-- pattern attribute allows regex to be performed on the input -->
+                    <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+                </p>
+
+                <p>
+                    <input type="email" required>
+
+                </p>
+                <button>Submit</button>
+
+
+
+            </form>
+
+
+
         </section>
 
         <hr>
