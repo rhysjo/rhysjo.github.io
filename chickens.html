@@ -288,7 +288,7 @@
 
             <!-- form element represents a document section containing interactive controls for submitting information -->
             <!-- action attribute specifies where the form data should be sent to -->
-            <form action="">
+            <form action="apples">
                 
                 <p>
                     <!-- label element creates a text label which can be linked to inputs -->
@@ -296,32 +296,33 @@
                     <label for="username">Enter your Username: </label>
                     <!-- input element represents an input on the form, the type attribute changes the style of input -->
                     <!-- placeholder attribute changes the placeholder text visible before typing into the input field -->
-                    <input id="username" type="text" placeholder="Username">
+                    <!-- the name attribute is the value used in the search query when submitted to send the data to the server -->
+                    <input id="username" name="username" type="text" placeholder="Username">
                 </p>
                 
                 <p>
                     <label for="password">Enter your Password: </label>
-                    <input id="password" type="password" placeholder="Password">
+                    <input id="password" name="password" type="password" placeholder="Password">
                 </p>
 
                 <p>
                     <label for="number">Enter a Number: </label>
-                    <input id="number" type="number" placeholder="Number">
+                    <input id="number" name="number" type="number" placeholder="Number">
                 </p>
 
                 <p>
                     <label for="range">Specify the Range: </label>
-                    <input id="range" type="range">
+                    <input id="range" name="range" type="range">
                 </p>
 
                 <p>
                     <label for="color">Select a Colour: </label>
-                    <input id="color" type="color">               
+                    <input id="color" name="color" type="color">               
                 </p>
 
                 <p>
                     <label for="radio">Select the Radio: </label>
-                    <input id="radio" type="radio">
+                    <input id="radio" name="radio" type="radio">
                 </p>
 
                 <p>
@@ -339,6 +340,20 @@
                 <!-- buttons outside of a form will not submit to anywhere -->
                 <button>Button Outside of Form</button>
             </p>
+
+            <hr>
+
+            <h2>"Hijacking" Google Search</h2>
+
+            <!-- this form will redirect the search query to google -->
+            <form action="https://www.google.co.uk/search">
+
+                <input type="text" name="query">
+                <button>Search Google</button>
+
+            </form>
+
+            
         </section>
 
         <hr>
