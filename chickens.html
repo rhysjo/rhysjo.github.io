@@ -2,16 +2,20 @@
 <html lang="en">
     
 <head>
+
     <title>Rhys O'Shea | Trainee Full Stack Developer | Chickens</title>
+    
 </head>
 
 <body>
 
     <nav>
+
         <a href="index.html">Home |</a>
         <a href="about.html">About |</a>
         <a href="chickens.html">Chickens |</a>
-        <a href="race_registration.html">Race Registration</a>     
+        <a href="race_registration.html">Race Registration</a>    
+
     </nav>
 
     <h1><a href="https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=PPINTENTP3" target="_blank">The Web Developer Bootcamp 2024</a></h1>
@@ -38,6 +42,7 @@
 
         <!-- This is a comment in HTML -->
         <section>
+
             <h2>Standard Elements:</h2>
 
             <!-- &lt; displays a < (less than) symbol, without the web browser rendering it -->
@@ -129,12 +134,15 @@
                     </ul>
                 
             </ul>
+
             <img src="professional_art_pp.jpg" alt="Cartoonified, Professional photo of me" width="300" height="300">
+
             <hr>
 
         </section>
 
         <section>
+
             <h2><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">Semantic Elements</a></h2>
 
             <p>
@@ -146,6 +154,7 @@
         <hr>
 
         <section>
+
             <h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">Heading Elements:</a></h2>
 
             <p>
@@ -164,6 +173,7 @@
         <hr>
 
         <section>
+
             <h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Table Elements</a></h2>
 
             <h3>Heaviest Birds</h3>
@@ -179,11 +189,13 @@
                         <th>Avg Weight</th>
                         <th>Max Weight</th>
                         <th>Flighted</th>
+
                     </tr>
                 </thead>
                 
                 <!-- tbody element represents the body of a table -->
                 <tbody>
+
                     <tr>
                         <!-- td element represents a cell in a table -->
                         <td>Ostrich</td>
@@ -209,13 +221,16 @@
 
                 <!-- tfoot element represents the foot of a table, useful for accumulative values -->
                 <tfoot>
+
                     <tr>
                         <td>Total</td>
                         <td><b>207.5 (459.8)</b></td>
                         <td><b>325.8 (719)</b></td>
                         <td></td>
                     </tr>
+
                 </tfoot>
+
             </table>
 
             <br><br>
@@ -234,6 +249,7 @@
                         <th colspan="2">Average Mass</th>
                         <th rowspan="2">Flighted</th>
                     </tr>
+
                     <tr>
                         <th>KG</th>
                         <th>LBS</th>
@@ -242,6 +258,7 @@
                 
                 <!-- tbody element represents the body of a table -->
                 <tbody>
+
                     <tr>
                         <!-- td element represents a cell in a table -->
                         <td>Ostrich</td>
@@ -263,17 +280,21 @@
                         <td>29.8</td>
                         <td>Yes</td>
                     </tr>
+
                 </tbody>
 
                 <!-- tfoot element represents the foot of a table, useful for accumulative values -->
                 <tfoot>
+
                     <tr>
                         <td>Total</td>
                         <td><b>207.5</b></td>
                         <td><b>459.8</b></td>
                         <td></td>
                     </tr>
+
                 </tfoot>
+
             </table>
 
 
@@ -363,9 +384,11 @@
                     <br>
                     <label for="l">L: </label>
                     <input type="radio" name="size" id="l" value="l">
+
                 </p>
 
                 <p>
+
                     <label for="meal">Please select a meal type</label>
                     <!-- select tag create a drop down menu -->
                     <select name="meal" id="meal">
@@ -382,15 +405,19 @@
                 </p>
 
                 <p>
+
                     <label for="cheese">Amount of cheese</label>
                     <input id="cheese" name="cheese" type="range" min="1" max="100" step="5">
+
                 </p>
 
                 <p>
+
                     <label for="requests">Any special Requests?</label>
                     <br>
                     <!-- textarea is not an input -->
                     <textarea id="requests" name="requests" placeholder="Enter some text here..." rows="10" cols="50"></textarea>
+
                 </p>
 
                 <button>Submit!</button>
@@ -422,30 +449,29 @@
                 <label for="first">Enter first name</label>
                 <!-- The required attribute makes the input a mandatory field -->
                 <input type="text" name="first" id="first" required>
+
                 <p>
                     <label for="username">Username</label>
                     <!-- Can set min and max characters for an input -->
                     <!-- pattern attribute allows regex to be performed on the input -->
                     <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+
                 </p>
 
                 <p>
                     <input type="email" required>
-
                 </p>
+
                 <button>Submit</button>
 
-
-
             </form>
-
-
 
         </section>
 
         <hr>
 
         <section>
+
             <h2>HTML Boilerplate</h2>
 
             <p>
@@ -455,6 +481,7 @@
             <h3>Boilerplate</h3>
 
             <p>
+
                 &lt;!DOCTYPE html&gt; --> This is a flag to the browser to let it know it's viewing a HTML5 file
                 <br>       
                 &lt;html&gt; --> Represents the top level of the document
@@ -473,6 +500,7 @@
                 <br>
                 &lt;/html&gt;
                 <br>
+
             </p>
 
         </section>
@@ -484,12 +512,14 @@
             <h2>VS Code Shortcuts</h2>
             
             <p>
+
                 <ul>
                     <li>! then TAB: To generate HTML boilerplate</li>
                     <li>Shift + Alt + F: Format Document</li>
                     <li>Shift + Alt + Down: Duplicate current element</li>
                     <li>Ctrl + /: Comment line out</li>
                 </ul>
+
             </p>
 
         </section>
@@ -501,4 +531,5 @@
     </footer>
 
 </body>
+
 </html>
