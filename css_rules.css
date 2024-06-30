@@ -1,0 +1,21 @@
+/* This is a single-line comment */
+/* 
+    This is 
+    a multi-line
+    comment
+*/
+
+/* Everything before a curly brace "{" is called a selector */
+
+
+/* Makes all <h1> elements purple */
+h1{
+    color: purple;
+}
+
+
+/* Makes all <img> elements 100 pixels wide, 200 pixels tall */
+img{
+    width: 100px;
+    height: 200px;
+}

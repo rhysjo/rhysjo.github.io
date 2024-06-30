@@ -1,0 +1,30 @@
+{
+	"HTML Boilerplate": {
+	  "prefix": "!",
+	  "body": [
+		"<!DOCTYPE html>",
+		"<html lang=\"en\">\n",
+		"<head>\n",
+		"\t<meta charset=\"UTF-8\">",
+		"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+		"\t<title>Document</title>\n",
+		"</head>\n",
+		"<body>\n",
+		"\t<nav>\n",
+		"\t\t<a href=\"\"> PAGE NAME |</a>\n",
+		"\t</nav>\n",
+		"\t<header>\n",
+		"\t\t<h1>Page Title</h1>\n",
+		"\t</header>\n",
+		"\t<main>\n",
+		"\t</main>\n",
+		"\t<footer>\n",
+		"\t\t<code>This is some code that I have added to the document, how very thoughtful of me.</code>\n",
+		"\t</footer>\n",
+		"</body>\n",
+		"</html>\n"
+	  ],
+	  "description": "Custom HTML5 Boilerplate"
+	}
+  }
+  

@@ -16,80 +16,94 @@
 		<a href="index.html">Home |</a>
 		<a href="about.html">About |</a>
 		<a href="chickens.html">Chickens |</a>
-		<a href="race_registration.html">Race Registration</a>
-		<a href="css_basics.html">CSS Basics</a>
+		<a href="race_registration.html">Race Registration |</a>
+		<a href="css_basics.html">CSS Basics |</a>
 
 	</nav>
 
-	<h1>Race Registration!</h1>
+	<header>
 
-	<section>
-		<!-- To-Do:
-		First name
-		Last Name
-		Select a race
-		Email
-		Password
-		Age Group
-		Register button	 
-		 -->
-		<form action="/race">
+		<h1>Race Registration!</h1>
 
-			<p>
+	</header>	
 
-				<label for="firstname">First Name</label>
-				<input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required>
+	<main>
 
-				<label for="lastname">Last Name</label>
-				<input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required>
-
-			</p>
-
-			<p>
+		<section>
+			<!-- DONE:
+			First name
+			Last Name
+			Select a race
+			Email
+			Password
+			Age Group
+			Register button	 
+			-->
+			<form action="/race">
 
 				<p>
-					Select a Race:
+
+					<label for="firstname">First Name</label>
+					<input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required>
+
+					<label for="lastname">Last Name</label>
+					<input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required>
+
 				</p>
 
-					<input type="radio" id="5k" name="run" value="5k">
-					<label for="5k">Fun Run 5k</label>
-					<br>				
-					<input type="radio" id="half" name="run" value="half">
-					<label for="half">Half Marathon</label>
-					<br>
-					<input type="radio" id="full" name="run" value="full">
-					<label for="full">Full Marathon</label>
+				<p>
 
-			</p>
+					<p>
+						Select a Race:
+					</p>
 
-			<p>
+						<input type="radio" id="5k" name="run" value="5k">
+						<label for="5k">Fun Run 5k</label>
+						<br>				
+						<input type="radio" id="half" name="run" value="half">
+						<label for="half">Half Marathon</label>
+						<br>
+						<input type="radio" id="full" name="run" value="full">
+						<label for="full">Full Marathon</label>
 
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" placeholder="Enter Email" required>
+				</p>
 
-				<label for="password">Password</label>
-				<input type="password" id="password" name="password" placeholder="Enter Password" required>
+				<p>
 
-			</p>
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="Enter Email" required>
 
-			<p>
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" placeholder="Enter Password" required>
 
-				<label for="age">Select Age Group</label>
+				</p>
 
-				<select name="age" id="age">
-					<option value="under18">Under 18</option>
-					<option value="18-30">18-30</option>
-					<option value="31-50">31-50</option>
-					<option value="51+">51+</option>
-				</select>
+				<p>
 
-			</p>
+					<label for="age">Select Age Group</label>
 
-			<button>Register!</button>
+					<select name="age" id="age">
+						<option value="under18">Under 18</option>
+						<option value="18-30">18-30</option>
+						<option value="31-50">31-50</option>
+						<option value="51+">51+</option>
+					</select>
 
-		</form>
+				</p>
 
-	</section>
+				<button>Register!</button>
+
+			</form>
+
+		</section>
+
+	</main>
+
+	<footer>
+		
+        <code>This is some code that I have added to the document, how very thoughtful of me.</code>
+		
+    </footer>
 
 </body>
 
