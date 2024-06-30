@@ -23,6 +23,12 @@ h1{
     /* sets the weight/thickness of the text */
     font-weight: normal;
 
+    /* Changes the font size */
+    font-size: 50px;
+
+    /* changes the actual font */
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
     /* The element only takes up 50% of the space */
     width: 50%;
 
@@ -70,7 +76,7 @@ p{
     letter-spacing: 3px;
 
     /* sets the font size */
-    font-size:small;
+    font-size: small;
 }
 
 body{
