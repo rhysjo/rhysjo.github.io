@@ -1,0 +1,46 @@
+/*
+specifies every element
+*{
+    background-color: cyan;
+} */
+
+body{
+    background-color: #f1faee;
+}
+
+button{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* specifies h1 AND h2 elements */
+h1,h2{
+    color: #1d3557;
+}
+
+/* Specify the element using the ID of the element prefixed with a # */
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span{
+    color: #457b9d;
+}
+
+/* specify the elements using the class of the element prefixed with a . */
+.tag{
+    background-color: tomato;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* descendant selector, specifies all anchors inside the post class */
+.post a{
+    color: #457b9d;
+}
+
+/* descendant selector, specifies all anchors inside a footer */
+footer a{
+    color: #e63946;
+}
