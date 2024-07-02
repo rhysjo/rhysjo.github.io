@@ -44,3 +44,78 @@ span{
 footer a{
     color: #e63946;
 }
+
+/* Adjacent/combination selectors, selects only the h2's that are immediately preceded by an span */
+span + h2{
+    color: red;
+}
+
+h2 + button{
+    font-size: 20px;
+}
+
+/* Direct descendant/child combinator, selects the anchor thats a direct descendant/child of the footer */
+footer > a{
+color: #a8dadc;
+}
+
+/* Attribute selector, selects only the elements of this attribute */
+input[type="password"]{
+    color: greenyellow;
+
+}
+
+section[class="post"]{
+    background-color: purple;
+}
+
+a[href*="google"]{
+    color: magenta;
+}
+
+/* Pseudo classes, selects any button element in a post class when hovered */
+.post button:hover{
+    background-color: orange;
+}
+
+.post a:hover{
+    text-decoration: overline;
+}
+
+.post button:active{
+    background-color: #02c39a;
+}
+
+/* select every other 3rd element */
+.post:nth-of-type(3n){
+    background-color: #dfe8dc;
+}
+
+/* pseudo elements, select the first letter, change to white */
+h2::first-letter{
+    font-size: 35px;
+    color: darkcyan;
+}
+
+/* select the first line of the paragraph, change to teal */
+p::first-line{
+    color: teal;
+}
+
+/* select paragraphs, change background colour to red when text is selected */
+p::selection{
+    background-color: red;
+}
+
+/* inserts some visual text using ::before, this text cannot be selected */
+p::before{
+    content: "This is some text before the paragraph using CSS ::before pseudo-element | ";
+    color: lightskyblue;
+    font-size: 20px;
+}
+
+p::after{
+    content: " | This is some text after the paragraph using CSS ::after pseudo-element";
+    color: lightskyblue;
+    font-size: 20px;
+}
