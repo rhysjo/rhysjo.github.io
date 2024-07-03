@@ -119,3 +119,8 @@ p::after{
     color: lightskyblue;
     font-size: 20px;
 }
+
+/* The important modifier overwrites ANYTHING else and is THE most "specific" delcaration */
+button{
+    background-color: magenta !important;
+}

@@ -1,0 +1,19 @@
+/* Doesnt specify a specific element, but every element within the body will "inherit" the style */
+body {
+    color: purple;
+}
+
+/* the section element is the closest style to the succeeding elements so takes priority */
+section{
+    color: aqua;
+}
+
+/* Label will use this style, certain elements dont inherit styles by default, like inputs */
+form{
+    color: greenyellow;
+}
+
+/* the inherit keyword allows the button/inputs to inherit the style from the parent element, in this case form */
+button,input{
+    color: inherit;
+}
