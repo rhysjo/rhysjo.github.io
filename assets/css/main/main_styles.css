@@ -4,9 +4,11 @@ html{
 
 body {
     font-size: 2rem;
-    background-color: #ffffff; /* Base background color */
+    /* Base background color */
+    background-color: #ffffff;
     background-image: radial-gradient(circle, #000000 1px, transparent 1px);
-    background-size: 20px 20px; /* Size of the dot pattern */
+    /* Size of the dot pattern */
+    background-size: 20px 20px;
 }
 
 #header{
@@ -17,7 +19,7 @@ body {
 h1{
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #fffffe;
 }
 
 header{
