@@ -11,8 +11,8 @@ body {
     background-size: 20px 20px;
 }
 
-header, #main-nav a {
-    /* Set font of nav bar and Header */
+header, #main-nav a, h2, h4 {
+    /* Set font of nav bar, Header, h2, and h4 */
     font-family: "Century Gothic", sans-serif;
 }
 
@@ -21,7 +21,7 @@ header, #main-nav a {
     align-items: center;
 }
 
-h1 {
+h1, code {
     margin: 0;
     padding: 0;
     background-color: #fffffe;
@@ -32,10 +32,6 @@ h1 {
     gap: 15px;
     text-decoration: none;
     color: #424242;
-}
-
-#main-nav a:visited {
-    text-decoration: none;
 }
 
 #main-nav a:hover,
@@ -72,6 +68,25 @@ h1 {
     opacity: 1;
 }
 
-code{
-    background-color: #fffffe;
+h2, h4 {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+#dwip {
+    text-align: center;
+    border: thick solid red;
+    padding: 1px;
+    margin: 1px;
+    background-color: #ebebeb;
 }
