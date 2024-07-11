@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/css/learning_material/css_flexbox.css">
+    <title>Learning Material | Flexbox</title>
+
+</head>
+
+<body>
+
+    <nav>
+
+		<a href="../../index.html">Home |</a>
+		<a href="../about.html">About |</a>
+		<a href="../learning_material.html">Learning Material |</a>
+
+	</nav>
+
+    <header>
+
+        <h1>Flexbox</h1>
+        <h2>Window best viewed in 1920x1080 resolution</h2>
+
+    </header>
+
+    <main>
+
+        <h3>flex-direction: row (default)</h3>
+        <p>Arranges flex items horizonally from left to right</p>
+
+        <section id="container1">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: row-reverse</h3>
+        <p>Arranges flex items horizonally from right to left</p>
+
+        <section id="container2">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: column</h3>
+        <p>Arranges flex items vertically from top to bottom</p>
+
+        <section id="container3">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: column-reverse</h3>
+        <p>Arranges flex items vertically from bottom to top</p>
+
+        <section id="container4">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: flex-start</h3>
+        <p>Aligns flex items at the beginning of the containers main axis (i.e. the x-axis)</p>
+
+        <section id="container5">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: flex-end</h3>
+        <p>Aligns flex items at the end of the containers main acis (i.e. the x-axis)</p>
+
+        <section id="container6">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: center</h3>
+        <p>Aligns flex items at the center of the containers main axis (i.e. the x-axis)</p>
+
+        <section id="container7">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: space-between</h3>
+        <p>Evenly distributes flex items along the main axis, with the first item at the start and the last item at the end of the container</p>
+
+        <section id="container8">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: space-around</h3>
+        <p>Evenly distributes flex items along the main axis, with equal space around each item</p>
+
+        <section id="container9">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: space-evenly</h3>
+        <p>Distributes flex items evenly along the main axis, with equal space between all items, including the edges of the container</p>
+
+        <section id="container10">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: row | flex-wrap: wrap | justify-content: space-around</h3>
+        <p>Arranges flex items horizonally with wrapping enabled, evenly distributing space around them along the name axis and wrapping onto multiple lines as needed</p>
+
+        <section id="container11">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+            <div style="background-color: #ddff80">6</div>
+            <div style="background-color: #778410">7</div>
+            <div style="background-color: #24d739">8</div>
+            <div style="background-color: #174b38">9</div>
+            <div style="background-color: #c3309c">10</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: row | flex-wrap: wrap-reverse | justify-content: space-around</h3>
+        <p>Arranges flex items horizonallywith wrapping in reverse order along the main axis, evenly distributing space around them</p>
+
+        <section id="container12">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+            <div style="background-color: #ddff80">6</div>
+            <div style="background-color: #778410">7</div>
+            <div style="background-color: #24d739">8</div>
+            <div style="background-color: #174b38">9</div>
+            <div style="background-color: #c3309c">10</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: column | flex-wrap: wrap | justify-content: space-around</h3>
+        <p>Arranges flex items vertically with wrapping enabled, evenly distributing space around them along the main axis and wrapping onto multiple columns as needed</p>
+
+        <section id="container13">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+            <div style="background-color: #ddff80">6</div>
+            <div style="background-color: #778410">7</div>
+            <div style="background-color: #24d739">8</div>
+            <div style="background-color: #174b38">9</div>
+            <div style="background-color: #c3309c">10</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-direction: column | flex-wrap: wrap-reverse | justify-content: flex-start</h3>
+        <p>Arranges flex items vertically with wrapping in reverse order along the main axis, aligning them at the beginning of the container</p>
+
+        <section id="container14">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+            <div style="background-color: #ddff80">6</div>
+            <div style="background-color: #778410">7</div>
+            <div style="background-color: #24d739">8</div>
+            <div style="background-color: #174b38">9</div>
+            <div style="background-color: #c3309c">10</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: center | align-items: flex-start</h3>
+        <p>Center-aligns flex items along the main axis and aligns them at the start of the cross axis (i.e. y-axis) within their container</p>
+
+        <section id="container15">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: center | align-items: flex-end</h3>
+        <p>Aligns flex items along the main axis and aligns them at the end of the cross axis within their container</p>
+
+        <section id="container16">
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>justify-content: center | align-items: center</h3>
+        <p>Centrally aligns flex items both horizonally along the main axis and vertically along the cross axis within their container</p>
+
+        <section id="container17">
+
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3"; id="div3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3"; id="div5">5</div>
+        </section>
+
+        <br>
+        <hr>
+        
+        <h3>justify-content: center | align-items: baseline</h3>
+        <p>Center-aligns flex items along the main axis and aligns them based on their baseline along the cross axis within their container</p>
+
+        <section id="container18">
+
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3"; id="div3">3</div>
+            <div style="background-color: #5390d9; font-size: 8em;">4</div>
+            <div style="background-color: #6930c3"; id="div5">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>text-align: center | align-self: center | align-items: flex-start |flex-wrap: wrap</h3>
+        <p>Center-aligns text within each flex item, centers each item along the cross axis individually, aligns all items at the start of the container, and allows items to wrap onto multiple lines as necessary</p>
+
+        <section id="container19">
+
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>flex-basis | text-align: center</h3>
+        <p>Centers the text within each flex item and sets the initial size of each item to 400 pixels along the main axis.<br>Flex-gorw controls the amount of available space an element should take up. <br>Flex-shrink is applied if items are larger than the container, they shrink according to the flex-shrink</p>
+
+        <section id="container20">
+
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+
+        </section>
+
+        <br>
+        <hr>
+
+        <h3></h3>
+        <p></p>
+
+        <h3>[1] - flex-grow: 1 | [5] - flex-grow:2</h3>
+        <p>Allows the flex item to grow and take up any available space in the container proprtionally to other flex items.<br>Number 5 will take up twice as much space as Number 1</p>
+
+        <section id="container21">
+
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+
+        </section>
+
+        <br>
+        <hr>
+
+        <h3></h3>
+        <p></p>
+
+        <h3>[1] - flex-shrink: 1 | [5] - flex-shrink:2</h3>
+        <p>Allows the flex item to shrink proprtionally when there is not enough space in the container.<br>Number 5 will shrink in size, twice as fast as Number 1.<br>Setting the shrink to 0 will prevent the element from shrinking down.</p>
+
+        <section id="container22">
+
+            <div style="background-color: #80ffdb">1</div>
+            <div style="background-color: #64dfdf">2</div>
+            <div style="background-color: #48bfe3">3</div>
+            <div style="background-color: #5390d9">4</div>
+            <div style="background-color: #6930c3">5</div>
+
+        </section>
+
+        <br>
+        <hr>
+
+        <h2>Sidebar & Main Content Example</h2>
+        <p>The sidebars can grow and shrink with a base size of 300px, while the main content can grow more and shrink less with a base size of 800px</p>
+        <section id="main">
+
+            <section class="sidebar"></section>
+            <section class="maincontent"></section>
+            <section class="sidebar"></section>
+
+        </section>
+
+
+        <br>
+
+    </main>
+
+    <footer>
+
+        <code>This is some code that I have added to the document, how very thoughtful of me.</code>
+
+    </footer>
+
+</body>
+
+</html>
