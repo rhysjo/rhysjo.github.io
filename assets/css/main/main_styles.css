@@ -1,45 +1,74 @@
 html {
     /* Set base font of document */
-    font-size: 12px;
-}
-
-body {
-    /* Body font 2 times larger than base font */
-    font-size: 2rem;
-    /* Create dotted background */
-    background: #ffffff radial-gradient(circle, #000000 1px, transparent 1px);
-    background-size: 20px 20px;
-}
-
-header, #main-nav a, h2, h4 {
-    /* Set font of nav bar, Header, h2, and h4 */
     font-family: "Century Gothic", sans-serif;
 }
 
-#header {
-    display: flex;
-    align-items: center;
+body {
+    /* Create dotted background */
+    background: #ffffff radial-gradient(circle, #000000 1px, transparent 1px);
+    background-size: 20px 20px;   
 }
 
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+
+
+/* h1 and code only */
 h1, code {
     margin: 0;
     padding: 0;
+    /* background-color: #fffffe; */
+}
+
+/* Main nav element is flex, with each item inside given space between them */
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    min-width: 405px;
+
+}
+
+ul{
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+/* ul and li elements inside main-nav */
+#main-nav li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    /* background-color: #fffffe; */
+}
+
+/* anchors inside main-nav only */
+#main-nav a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #424242;
     background-color: #fffffe;
 }
 
-#main-nav a {
-    display: flex;
-    gap: 15px;
-    text-decoration: none;
-    color: #424242;
-}
-
+/* anchors inside main-nav only */
 #main-nav a:hover,
 #main-nav a:active {
     text-decoration: underline;
     color: #949494;
 }
 
+/* elements of class image-container only */
 .image-container {
     position: relative;
     width: 200px;
@@ -50,6 +79,7 @@ h1, code {
     border: medium solid #000000;
 }
 
+/* elements of class pimg and cpimg only */
 .pimg, .cpimg {
     position: absolute;
     top: 0;
@@ -59,40 +89,38 @@ h1, code {
     transition: opacity 0.5s ease;
 }
 
+/* element of class cpimg only */
 .cpimg {
     opacity: 0;
     z-index: 1;
 }
 
+/* child element of class cpimg of parent class image-container only */
 .image-container:hover .cpimg {
     opacity: 1;
 }
 
-h2, h4 {
-    font-family: "ABeeZee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
+/* when resolution below 1210px */
+@media(max-width: 1210px){
+    h1{
+        font-size: 2em;
+    }
 }
 
-h2 {
-    font-size: 3rem;
+/* when resolution below 812px */
+@media(max-width: 812px){
+    h1{
+        font-size: 1.5em;
+    }
 }
 
-h4 {
-    font-size: 1.2rem;
-}
-
-#dwip {
-    text-align: center;
-    border: thick solid red;
-    padding: 1px;
-    margin: 1px;
-    background-color: #ebebeb;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 25%;
-    max-width: 1200px;
+/* when resolution below 612px */
+@media(max-width: 612px){
+    /* set main-nav id, and ul inside main-nac id */
+    #main-nav, #main-nav ul{
+        /* to column and center */
+        /* appears as a stack of items */
+        flex-direction: column;
+        align-items: center;
+    }
 }
