@@ -53,6 +53,10 @@ body{
     /* transition: color 0.5s ease, text-decoration 0.5s ease; */
 }
 
+/* .main-nav #txt{
+    background-color: #ffffff;
+} */
+
 .nav-class a:hover,
 .nav-class a:active{
     text-decoration: underline;
@@ -80,6 +84,8 @@ h1{
     text-wrap: nowrap;
     background-color: #ffffff;
     border-radius: 0.7rem;
+    padding-left: 20px;
+    padding-right: 20px;
     /* border: solid thin black; */
 }
 
