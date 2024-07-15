@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html, body {
+html, body{
     /* font-family: "Roboto Condensed", sans-serif; */
     /* font-family: "Kanit", sans-serif; */
     /* font-family: "Roboto", sans-serif; */
@@ -12,11 +12,13 @@ html, body {
     background: #ffffff;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 body{
     background: #ffffff radial-gradient(circle, #000000 1px, transparent 1px);
-    background-size: 20px 20px;  
+    background-size: 20px 20px;
+    z-index: 0;
 }
 
 .nav-section,
@@ -84,6 +86,7 @@ h1{
     text-wrap: nowrap;
     background-color: #ffffff;
     border-radius: 0.7rem;
+    padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
     /* border: solid thin black; */
@@ -93,7 +96,7 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 0;
-    height: 500px;
+    height: 15rem;
 }
 
 /* .img-card {
@@ -118,7 +121,11 @@ h1{
     border-radius: 50%;
     background-color: #ffffff;
     border: thick solid #ffffff;
-    /* border: solid thin black; */
+    border: solid thin black;
+    /* transform: translateY(-10px); */
+    padding: 0;
+    margin: 0;
+    z-index: 2;
 }
 
 .pimg, .cpimg {
@@ -132,12 +139,52 @@ h1{
 
 .cpimg {
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .img-container:hover .cpimg {
     opacity: 1;
 }
+
+.body-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    height: 25rem;
+    transform: translateY(-50px);
+    /* background-color: #000000; */
+}
+
+.body-card{
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 0;
+    height: 20rem;
+    width: 35rem;
+    background-color: #ffffff;
+    border: thin solid black;
+    border-radius: 2rem;
+    z-index: 1;
+}
+
+.body-heading{
+    height: 15%;
+    width: 100%;
+    /* border-radius: 2rem;
+    background-color: red; */
+
+}
+
+.body-container #intro{
+    color: black;
+    font-style: inherit;
+    font-weight: 300;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 
 @media (max-width: 900px) {
     .main-nav {
@@ -176,9 +223,9 @@ h1{
         margin: 0;
     }
 
-    .main-nav #txt {
+    /* .main-nav #txt {
         text-decoration: underline;
-    }
+    } */
 }
 
 @media(max-width: 440px){
