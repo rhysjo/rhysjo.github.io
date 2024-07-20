@@ -13,12 +13,18 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 body{
     background: #ffffff radial-gradient(circle, #000000 1px, transparent 1px);
     background-size: 20px 20px;
     z-index: 0;
+}
+
+main{
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .nav-section,

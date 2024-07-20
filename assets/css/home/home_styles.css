@@ -1,3 +1,7 @@
+html, body{
+    height: 100%;
+}
+
 .heading-section{
     display: flex;
     justify-content: center;
@@ -18,6 +22,10 @@ h1{
     padding-left: 20px;
     padding-right: 20px;
     /* border: solid thin black; */
+}
+
+.home-li{
+    font-weight: 600;
 }
 
 .img-section {
@@ -189,4 +197,19 @@ h1{
         width: 12rem;
         height: 12rem;
     } */
+}
+
+@media(max-width: 380px){
+    main{
+        font-size: 0.8rem;
+        height: 1%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .body-section{
+        height: 15rem;
+    }
 }
