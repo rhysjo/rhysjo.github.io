@@ -4,6 +4,8 @@ TO DO:
 
  - Wins Page: Certifications, Bootcamps, Qualifications etc.
 
+ - The Sandbox: A page to practice web development skills, to a professional level that can be shown off on it's own page.
+
  - Use SVG viewer for icons on home page (LinkedIn, Github, Instagram, YouTube)
 
  - TODO List somewhere on site, possible on the Blog page????
@@ -12,8 +14,8 @@ TO DO:
 
 
 BUGS:
- - Squash bio card width when in smaller resolution
+ <!-- - Squash bio card width when in smaller resolution -->
 
- - Fix issue with profile pic shifting upwards when in smaller  resolution
+ <!-- - Fix issue with profile pic shifting upwards when in smaller  resolution -->
 
- - Fix issue with Header Name and Nav bar being cut off in smaller resolution
+ <!-- - Fix issue with Header Name and Nav bar being cut off in smaller resolution -->

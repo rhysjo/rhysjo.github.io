@@ -1,7 +1,64 @@
-html, body{
-    height: 100%;
+/* about_styles */
+
+.ro-about-li{
+    font-weight: 600;
 }
 
-.about-li{
+.ro-hr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ro-section-1-card{
+    background-color: #ffffff;
+    border: thin solid black;
+    border-radius: 0.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.ro-name-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ro-bs-tt {
+    visibility: hidden;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ro-bs-tt::after {
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f9f9f9 transparent transparent transparent;
+}
+
+.ro-bs-icon:hover .ro-bs-tt{
+    visibility: visible;
+    opacity: 1;
+}
+
+.ro-about-b{
     font-weight: 600;
+}
+
+@media (max-width: 750px){
+    .ro-bs-tt{
+        right: 1rem;
+        left: 7rem;
+        text-align: center;
+    }
 }

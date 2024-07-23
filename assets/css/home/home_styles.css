@@ -1,8 +1,6 @@
-html, body{
-    height: 100%;
-}
+/* home_styles */
 
-.heading-section{
+.ro-heading-section{
     display: flex;
     justify-content: center;
 }
@@ -12,7 +10,6 @@ h1{
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
-    /* margin-bottom: 20px; */
     text-decoration: none;
     color: black;
     text-wrap: nowrap;
@@ -21,21 +18,24 @@ h1{
     padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    /* border: solid thin black; */
 }
 
-.home-li{
+.ro-nav-class{
+    margin-top: 0;
+}
+
+.ro-home-li{
     font-weight: 600;
 }
 
-.img-section {
+.ro-img-section {
     display: flex;
     justify-content: center;
     margin-top: 0;
     height: 15rem;
 }
 
-.img-container {
+.ro-img-container {
     position: relative;
     width: 15rem;
     height: 15rem;
@@ -45,13 +45,12 @@ h1{
     background-color: #ffffff;
     border: thick solid #ffffff;
     border: solid thin black;
-    /* transform: translateY(-10px); */
     padding: 0;
     margin: 0;
     z-index: 2;
 }
 
-.pimg, .cpimg {
+.ro-pimg, .ro-cpimg {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,27 +59,25 @@ h1{
     transition: opacity 0.5s ease;
 }
 
-.cpimg {
+.ro-cpimg {
     opacity: 0;
     z-index: 2;
 }
 
-.img-container:hover .cpimg {
+.ro-img-container:hover .ro-cpimg {
     opacity: 1;
 }
 
-.body-section{
+.ro-body-section{
     display: flex;
     justify-content: center;
     margin-top: 0;
     height: 25rem;
     transform: translateY(-50px);
-    /* background-color: #000000; */
 }
 
-.body-card{
+.ro-body-card{
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
     flex-direction: column;
     margin-top: 0;
@@ -92,15 +89,14 @@ h1{
     z-index: 1;
 }
 
-.body-heading{
+.ro-body-heading{
     display:inline;
     height: 15%;
     width: 100%;
-    /* border-radius: 2rem;
-    background-color: red; */
+    /* background-color: red; */
 }
 
-.body-container #intro{
+.ro-body-container #ro-intro{
     color: black;
     font-style: inherit;
     font-size: larger;
@@ -108,25 +104,32 @@ h1{
     font-weight: 300;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 1rem;
 }
 
-.body-container #intro-break{
+.ro-body-container #ro-intro-break{
+    margin: 0 auto;
     width: 80%;
 }
 
-.info-div{
-    position: relative;
-    display: inline-block;
+.ro-info-div {
+    display: flex;
+    align-items: center;  /* Center items vertically */
+    justify-content: center;  /* Center items horizontally */
+    margin-right: 0.5rem;  /* Optional: Adjust margin as needed */
 }
 
-.info-svg{
-    padding-top: 10px;
-    padding-left: 10px;
+.ro-info-svg{
+    padding-top: 0.2rem;
 }
 
-.tooltip-box {
+.ro-info-icon{
+    height: 24px;
+}
+
+.ro-tooltip-box {
     visibility: hidden;
-    width: 200px;
+    font-size: 1rem;
     background-color: #ffffff;
     color: black;
     font-weight: 300;
@@ -135,28 +138,40 @@ h1{
     padding: 10px;
     position: absolute;
     z-index: 1;
-    /* bottom: 125%;  */
-    left: 50%;
-    margin-left: -100px; /* Center the tooltip */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-.tooltip-box::after {
-    content: "";
-    position: absolute;
-    top: 100%; /* Arrow at the bottom of the tooltip */
-    left: 50%;
+.ro-tooltip-box::after {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: #f9f9f9 transparent transparent transparent;
 }
 
-.info-div:hover .tooltip-box {
+.ro-info-icon:hover .ro-tooltip-box {
     visibility: visible;
     opacity: 1;
+}
+
+#ro-name-b{
+    font-weight: 600;
+}
+
+.ro-name-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ro-txt-home{
+    display: flex;
+    align-items: center;
+}
+
+.ro-info-icon{
+    margin-left: 10px;
 }
 
 
@@ -165,18 +180,17 @@ h1{
         font-size: 2.6rem;
     }
 
-    #txt{
+    #ro-txt-home{
         text-align: center;
     }
 
-    .body-card{
+    .ro-body-card{
         margin: 10px;
     }
 
-    .tooltip-box{
+    .ro-tooltip-box{
         right: 1rem;
-        left: 7rem;
-        
+        left: 7rem; 
     }
 }
 
@@ -185,18 +199,13 @@ h1{
         font-size: 2.5rem;
     }
 
-    #txt{
+    #ro-txt-home{
         text-align: center;
     }
 
-    .body-card{
+    .ro-body-card{
         margin: 10px;
     }
-
-    /* .img-container{
-        width: 12rem;
-        height: 12rem;
-    } */
 }
 
 @media(max-width: 380px){
@@ -209,7 +218,7 @@ h1{
         font-size: 2rem;
     }
 
-    .body-section{
+    .ro-body-section{
         height: 15rem;
     }
 }

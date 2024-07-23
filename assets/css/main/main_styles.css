@@ -1,41 +1,45 @@
+/* main_styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* *{
+    box-sizing: border-box;
+} */
 
 html, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-style: normal;
     background: #ffffff;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
 }
 
 body {
     background: radial-gradient(circle, #000000 1px, transparent 1px) #ffffff;
     background-size: 20px 20px;
     z-index: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 main {
     min-height: 100vh;
-    overflow: hidden;
 }
 
-.nav-section,
-.main-nav {
+.ro-nav-section,
+.ro-main-nav {
     display: flex;
     text-wrap: nowrap;
 }
 
-.nav-section {
+.ro-nav-section {
     justify-content: center;
     margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
-.main-nav {
+.ro-main-nav {
     justify-content: space-between;
-    min-width: 405px;
+    /* min-width: 405px; */
     height: 50px;
     padding: 10px 10px;
     align-items: center;
@@ -43,18 +47,18 @@ main {
     font-size: 1.5em;
 }
 
-.main-nav li {
+.ro-main-nav li {
     display: inline;
     list-style: none;
 }
 
-.main-nav a {
+.ro-main-nav a {
     margin: 0 10px;
     text-decoration: none;
     color: black;
 }
 
-.main-nav .name-div {
+.ro-main-nav .ro-name-div {
     display: inline-block;
     background-color: #ffffff;
     border-radius: 0.8rem;
@@ -62,23 +66,27 @@ main {
     max-width: 100%;
 }
 
-#txt{
+.ro-txt{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-.nav-class a:hover,
-.nav-class a:active {
+.ro-nav-class a:hover,
+.ro-nav-class a:active {
     text-decoration: underline;
     color: #5c5c5c;
 }
 
-.nav-spacer {
+.ro-nav-class{
+    margin-bottom: 0;
+}
+
+.ro-nav-spacer {
     width: 25em;
     height: 100%;
 }
 
-.nav-item {
+.ro-nav-item {
     display: inline-block;
     background-color: #ffffff;
     padding: 0;
@@ -86,65 +94,76 @@ main {
     border-radius: 5px;
 }
 
-.sandbox-li{
+.ro-sandbox-li{
     border: 1px solid black;
     border-radius: 0.5rem;
 }
 
 @media (max-width: 1300px) {
-    .main-nav {
+    .ro-main-nav {
         justify-content: center;
     }
 
-    .main-nav a {
+    .ro-main-nav a {
         padding: 10px 5px;
         margin: 0 5px;
         font-size: 0.95em;
     }
 
-    .nav-spacer {
+    .ro-main-nav #ro-txt-home{
+        padding: 0;
+    }
+
+    .ro-nav-spacer {
         display: none;
     }
 
-    .main-nav .name-div {
+    .ro-main-nav .ro-name-div {
         max-width: 300px;
         width: 65%;
     }
 }
 
-@media (max-width: 1050px) {
-    .main-nav a {
+@media (max-width: 1100px) {
+    .ro-main-nav a {
         font-size: 0.8em;
     }
 }
 
 @media (max-width: 950px) {
-    .main-nav {
+    .ro-main-nav {
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-spacer,
-    .main-nav ul {
+    .ro-nav-spacer,
+    .ro-main-nav ul {
         display: none;
     }
 
-    .main-nav li {
+    .ro-main-nav li {
         display: block;
         margin: 0;
     }
 
-    .main-nav a {
+    .ro-main-nav a {
         padding: 0;
         margin: 0;
     }
 
-    #txt {
-        text-align: center;
+    #ro-txt-home {
+        /* align-items: center;
+        justify-content: center; */
+        /* text-align: center; */
         font-size: 125%;
     }
 
-    .main-nav .name-div {
+    .ro-info-icon svg{
+        /* background-color: red; */
+        padding-bottom: 1rem;
+    }
+
+    .ro-main-nav .ro-name-div {
         width: 80%;
         text-align: center;
         padding-bottom: 0.6rem;
@@ -153,7 +172,7 @@ main {
 }
 
 @media (max-width: 501px) {
-    #txt {
+    #ro-txt {
         text-align: center;
     }
 }
