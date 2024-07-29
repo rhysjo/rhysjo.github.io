@@ -16,11 +16,6 @@ main{
     margin-top: 7rem;
 }
 
-/* navrbar background default colour */
-.ro-bg-def{
-    background-color: #ffffff;
-}
-
 /* navbar brand styling (Rhys O'Shea | Home etc...) */
 .ro-brand-s{
     font-size: 1.55rem;
@@ -39,6 +34,7 @@ main{
     white-space: nowrap;
 }
 
+/* bootstrap navbar styles */
 .ro-nav-bs{
     width: auto;
     padding: 0;
@@ -55,19 +51,23 @@ main{
 
 /* Entire navbar padding */
 .ro-navbar{
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: thin solid black;
 }
 
 /* set nav-items width to fit content */
 .nav-item{
     width: auto;
     margin-left: 1rem;
+    text-align: end;
 }
 
-
+/* anchors in navbar, prevents longer elements text wrapping */
 .nav-link{
     margin: 0;
     white-space: no-wrap;
@@ -76,6 +76,7 @@ main{
 /* navbar sandbox link styling */
 #ro-nav-sandbox{
     border: solid thin black;
+    background-color: #ffffff;
     border-radius: 0.5rem;
     padding-left: 0.2rem;
     padding-right: 0.2rem;

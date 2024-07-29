@@ -1,5 +1,9 @@
 /* about_styles */
 
+.ro-about-container{
+    margin-top: 12rem;
+}
+
 .ro-about-li{
     font-weight: 600;
 }
