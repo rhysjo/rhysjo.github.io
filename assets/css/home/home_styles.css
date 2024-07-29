@@ -1,41 +1,41 @@
-/* home_styles */
-
-.ro-heading-section{
+/* Heading title styles */
+.ro-ht-s{
     display: flex;
     justify-content: center;
 }
 
-h1{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-    text-decoration: none;
-    color: black;
-    text-wrap: nowrap;
-    background-color: #ffffff;
+/* h1 styles */
+.ro-h1-s{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     border-radius: 0.7rem;
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 3.3rem;
+    text-wrap: nowrap;
 }
 
-.ro-nav-class{
-    margin-top: 0;
-}
-
-.ro-home-li{
-    font-weight: 600;
-}
-
-.ro-img-section {
+/* h1 container styles */
+.ro-h1-container{
     display: flex;
     justify-content: center;
-    margin-top: 0;
-    height: 15rem;
 }
 
-.ro-img-container {
+/* main container (image/body) styles */
+.ro-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+/* images container styles */
+.ro-img-container{
     position: relative;
     width: 15rem;
     height: 15rem;
@@ -50,7 +50,8 @@ h1{
     z-index: 2;
 }
 
-.ro-pimg, .ro-cpimg {
+/* images styles */
+.ro-pimg, .ro-cpimg{
     position: absolute;
     top: 0;
     left: 0;
@@ -59,166 +60,126 @@ h1{
     transition: opacity 0.5s ease;
 }
 
-.ro-cpimg {
+/* cartoon image styles */
+.ro-cpimg{
     opacity: 0;
     z-index: 2;
 }
 
-.ro-img-container:hover .ro-cpimg {
+/* image container hover effect */
+.ro-img-container:hover .ro-cpimg{
     opacity: 1;
 }
 
-.ro-body-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    height: 25rem;
-    transform: translateY(-50px);
+/* body heading div styles */
+.ro-body-heading{
+    display: inline;
+    height: 20%;
+    width: 100%;
 }
 
-.ro-body-card{
+/* main body container styles */
+.ro-body-container{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     margin-top: 0;
     height: 20rem;
-    width: 35rem;
+    width: 30rem;
     background-color: #ffffff;
     border: thin solid black;
     border-radius: 0.8rem;
     z-index: 1;
+    transform: translateY(-75px);
 }
 
-.ro-body-heading{
-    display:inline;
-    height: 15%;
-    width: 100%;
-    /* background-color: red; */
-}
-
-.ro-body-container #ro-intro{
+/* paragraph/intro styles */
+.ro-intro{
     color: black;
-    font-style: inherit;
     font-size: larger;
     text-align: center;
-    font-weight: 300;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 1rem;
+    font-weight: 300;
 }
 
-.ro-body-container #ro-intro-break{
+/* intro break styles */
+.ro-intro-break{
     margin: 0 auto;
     width: 80%;
 }
 
-.ro-info-div {
-    display: flex;
-    align-items: center;  /* Center items vertically */
-    justify-content: center;  /* Center items horizontally */
-    margin-right: 0.5rem;  /* Optional: Adjust margin as needed */
-}
-
-.ro-info-svg{
-    padding-top: 0.2rem;
-}
-
-.ro-info-icon{
-    height: 24px;
-}
-
-.ro-tooltip-box {
-    visibility: hidden;
-    font-size: 1rem;
-    background-color: #ffffff;
-    color: black;
-    font-weight: 300;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.ro-tooltip-box::after {
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #f9f9f9 transparent transparent transparent;
-}
-
-.ro-info-icon:hover .ro-tooltip-box {
-    visibility: visible;
-    opacity: 1;
-}
-
+/* body name highlight */
 #ro-name-b{
     font-weight: 600;
 }
 
-.ro-name-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#ro-txt-home{
-    display: flex;
-    align-items: center;
-}
-
-.ro-info-icon{
-    margin-left: 10px;
-}
-
-
-@media (max-width: 750px){
-    h1{
-        font-size: 2.6rem;
+@media(max-width: 390px){
+    .ro-main-container{
+        font-size: 1rem;
     }
 
-    #ro-txt-home{
-        text-align: center;
+    .ro-img-container{
+        width: 12rem;
+        height: 12rem;
     }
 
-    .ro-body-card{
-        margin: 10px;
-    }
-
-    .ro-tooltip-box{
-        right: 1rem;
-        left: 7rem; 
+    .ro-body-container{
+        width: 15rem;
     }
 }
 
-@media(max-width: 501px){
-    h1{
-        font-size: 2.5rem;
-    }
 
-    #ro-txt-home{
-        text-align: center;
-    }
 
-    .ro-body-card{
-        margin: 10px;
-    }
-}
-
-@media(max-width: 380px){
-    main{
-        font-size: 0.8rem;
-        height: 1%;
-    }
-
-    h1{
+@media(max-width: 500px){
+    .ro-h1-container h1{
         font-size: 2rem;
     }
 
-    .ro-body-section{
-        height: 15rem;
+    .ro-body-container{
+        width: 25rem;
+        transform: translateY(-50px);
+    }    
+}
+
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    /* body {
+        background-color: lightblue;
+    } */
+
+    .ro-h1-s{
+        font-size: 3rem;
     }
 }
+
+/* Small devices (tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+    /* body {
+        background-color: lightgreen;
+    } */
+}
+
+/* Medium devices (small laptops, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* body {
+        background-color: lightcoral;
+    } */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* body {
+        background-color: lightgoldenrodyellow;
+    } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body {
+        background-color: lightpink;
+    } */
+}
+
