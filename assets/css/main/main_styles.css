@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html {
+    overflow-y: scroll;
+}
+
+
 /* main html form font styling */
 html, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    user-select: none;
 }
 
 /* main body styling, dots */
@@ -12,8 +18,36 @@ body {
     background-size: 20px 20px;
 }
 
+/* add margin between nav and main content */
 main{
     margin-top: 7rem;
+}
+
+/* info box when hovering over bootstrap logo */
+.ro-info-box{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    width: 175px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* wrapper for infobox, bootstrap logo */
+.ro-anchor-wrap{
+    position: relative;
+    display: inline-block;
+}
+
+/* hover activation for info box on bootstrap logo */
+.ro-anchor-wrap:hover .ro-info-box{
+    display: block;
 }
 
 /* navbar brand styling (Rhys O'Shea | Home etc...) */
@@ -26,7 +60,6 @@ main{
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
 
 /* navbar link styling */
 .ro-nav-s{
@@ -129,18 +162,3 @@ main{
     }    
 }
 
-/*
-#ro-nav-sandbox li{
-    border-bottom: thin solid black;
-}
-
-#ro-nav-home li{
-    border-top: thin solid black;
-}
-
-.ro-nav-bs li{
-    border-left: thin solid black;
-    border-right: thin solid black;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-}
