@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* enables scrollbar */
 html {
     overflow-y: scroll;
 }
-
 
 /* main html form font styling */
 html, body {
@@ -21,6 +21,32 @@ body {
 /* add margin between nav and main content */
 main{
     margin-top: 7rem;
+}
+
+/* h1 container styles */
+.ro-h1-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* h1 styles */
+.ro-h1-s{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.7rem;
+    font-size: 3.3rem;
+    text-wrap: nowrap;
+}
+
+/* element background default */
+.ro-bg-def b{
+    background-color: #ffffff;
 }
 
 /* info box when hovering over bootstrap logo */
@@ -159,6 +185,16 @@ main{
 @media(max-width: 500px){
     .ro-brand-bs a{
         font-size: 1.45rem;
-    }    
+    }
+
+    .ro-h1-container h1{
+        font-size: 2rem;
+    }
 }
 
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    .ro-h1-s{
+        font-size: 3rem;
+    }
+}

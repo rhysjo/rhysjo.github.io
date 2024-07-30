@@ -1,7 +1,7 @@
 /* about_styles */
 
 .ro-about-container{
-    margin-top: 12rem;
+    margin-top: 3rem;
 }
 
 .ro-about-li{
@@ -17,7 +17,6 @@
     background-color: #ffffff;
     border: thin solid black;
     border-radius: 0.8rem;
-    /* padding-top: 2rem; */
     padding-bottom: 2rem;
 }
 
@@ -59,17 +58,17 @@
     font-weight: 600;
 }
 
-@media (max-width: 750px){
-    .ro-bs-tt{
-        right: 1rem;
-        left: 7rem;
-        text-align: center;
-    }
-}
-
 .ro-btn-wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.ro-btn-wrapper h2 {
+    margin: 0;
+    text-align: center;
+    flex: 1;
 }
 
 .collapsible-content {
@@ -86,9 +85,18 @@
     color: white;
     border-radius: 5px;
     margin-right: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+
 }
 
 .collapsible-btn:hover {
     background-color: #4b98ea;
+}
+
+@media (max-width: 750px){
+    .ro-bs-tt{
+        right: 1rem;
+        left: 7rem;
+        text-align: center;
+    }
 }
