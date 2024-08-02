@@ -186,15 +186,6 @@ main{
     .ro-brand-bs a{
         font-size: 1.45rem;
     }
-
-    .ro-h1-container h1{
-        font-size: 2rem;
-    }
 }
 
-/* Extra small devices (phones, less than 600px) */
-@media (max-width: 600px) {
-    .ro-h1-s{
-        font-size: 3rem;
-    }
-}
+

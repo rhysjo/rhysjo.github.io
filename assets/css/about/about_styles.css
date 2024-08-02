@@ -26,29 +26,6 @@
     justify-content: center;
 }
 
-.ro-bs-tt {
-    visibility: hidden;
-    font-size: 1rem;
-    background-color: #ffffff;
-    color: black;
-    font-weight: 300;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.ro-bs-tt::after {
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #f9f9f9 transparent transparent transparent;
-}
-
 .ro-bs-icon:hover .ro-bs-tt{
     visibility: visible;
     opacity: 1;
@@ -65,7 +42,7 @@
     margin-bottom: 1rem;
 }
 
-.ro-btn-wrapper h2 {
+.ro-ddl-1{
     margin: 0;
     text-align: center;
     flex: 1;
@@ -93,10 +70,76 @@
     background-color: #909090;
 }
 
-@media (max-width: 750px){
-    .ro-bs-tt{
-        right: 1rem;
-        left: 7rem;
-        text-align: center;
+@media(max-width: 860px){
+    .ro-h1-container b{
+        font-size: 3rem;
+    }
+
+    .ro-about-container{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 780px){
+    .ro-h1-container b{
+        font-size: 2.5rem;
+    }
+
+    .ro-about-container{
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    .ro-about-body{
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media(max-width: 660px){
+    .ro-h1-container b{
+        font-size: 2rem;
+    }
+
+    .ro-about-container{
+        margin-top: 1rem;
+    }
+
+    main{
+        margin-top: 5rem;
+    }
+}
+
+@media(max-width: 520px){
+    .ro-h1-container b{
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 440px){
+    .ro-h1-container b{
+        font-size: 1.6rem;
+    }
+
+    main{
+        margin-top: 6rem;
+    }
+}
+
+@media(max-width: 400px){
+    .ro-h1-s, .ro-h1-s b{
+        font-size: 1.4rem;
+    }
+
+    .ro-about-container{
+        margin-top: 1rem;
+    }
+
+    .ro-hr-top{
+        margin-top: 1rem;
+    }
+
+    .ro-about-body{
+        margin-bottom: 0 !important;
     }
 }

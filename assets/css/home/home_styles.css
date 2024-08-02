@@ -115,17 +115,21 @@
     .ro-body-container{
         width: 25rem;
         transform: translateY(-50px);
-    }    
+    }
+
+    .ro-h1-container{
+        font-size: 2rem;
+    }
 }
 
 
 
 
 /* Small devices (tablets, 600px and up) */
-@media (min-width: 600px) and (max-width: 768px) {
-    /* body {
-        background-color: lightgreen;
-    } */
+@media (max-width: 600px){
+    .ro-h1-s{
+        font-size: 2.7rem;
+    }
 }
 
 /* Medium devices (small laptops, 768px and up) */
