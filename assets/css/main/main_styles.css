@@ -65,6 +65,11 @@ main{
     z-index: 1000;
 }
 
+/* programming language logo */
+.ro-pll{
+    margin-right: 1rem;
+}
+
 /* wrapper for infobox, bootstrap logo */
 .ro-anchor-wrap{
     position: relative;
