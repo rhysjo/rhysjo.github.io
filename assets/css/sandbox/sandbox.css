@@ -1,3 +1,72 @@
 .ro-sandbox-li{
     font-weight: 600;
 }
+
+.h2{
+    color: black;
+    font-weight: 400;
+}
+
+.ro-proj-con a{
+    text-decoration: none;
+}
+
+.ro-proj-item {
+    background-color: #f8f8f8;
+    border: solid thin black;
+    color: grey;
+    border-radius: 0.5rem;
+    /* Ensure content stays within the border radius */
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    /* Maintain the aspect ratio */
+    padding-top: 75%;
+    /* Hide any overflow */
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 90%;
+
+}
+
+.image-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) { /* Extra small devices (portrait phones, less than 576px) */
+    .ro-proj-head h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { /* Small devices (landscape phones, 576px and up) */
+    .ro-proj-head h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { /* Medium devices (tablets, 768px and up) */
+    .ro-proj-head h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
+    .ro-proj-head h2 {
+        font-size: 3rem;
+    }
+}
