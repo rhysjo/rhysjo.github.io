@@ -193,4 +193,23 @@ main{
     }
 }
 
+@media(max-width: 545px){
+    .ro-brand-bs .ro-brand-s{
+        font-size: 1.4rem;
+    }
+
+    .ro-brand-bs, .ro-brand-s{
+        margin-left: 0;
+    }
+
+    .ro-brand-s{
+        margin-right: 0.5rem;
+    }
+}
+
+@media(max-width: 550px){
+    .ro-brand-bs .ro-brand-s{
+        font-size: 1.5rem;
+    }
+}
 

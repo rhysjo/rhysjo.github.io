@@ -18,6 +18,10 @@
     border-radius: 0.5rem;
     /* Ensure content stays within the border radius */
     overflow: hidden;
+
+    /* Project item shadows */
+    /* right, bottom, full?, full weight */
+    box-shadow: 1px 1px 30px 5px #91919133;
 }
 
 .image-container {
@@ -28,7 +32,9 @@
     /* Hide any overflow */
     overflow: hidden;
     border-radius: 0.5rem;
+    border: 0.2rem solid #f8f8f8;
 }
+
 .image-container img {
     position: absolute;
     top: 0;
@@ -36,15 +42,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 90%;
-
 }
 
 .image-container img:hover{
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ro-java-svg{
+    background-color: #fff9e1;
+    border-radius: 0.2rem;
+    padding: 2px;
 }
 
 @media (max-width: 576px) { /* Extra small devices (portrait phones, less than 576px) */
