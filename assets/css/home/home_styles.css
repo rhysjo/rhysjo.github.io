@@ -94,6 +94,32 @@
     font-weight: 600;
 }
 
+.new-add{
+    display: flex;
+    justify-content: center;
+}
+
+.ro-h2{
+    padding: 3px;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+.ro-h2 a{
+    text-decoration: none;
+}
+
+#new-content-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-content{
+    margin: 2px;
+    background-color: #ffffff;
+}
+
 @media(max-width: 390px){
     .ro-main-container{
         font-size: 1rem;

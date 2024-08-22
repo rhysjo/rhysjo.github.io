@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhys O'Shea | Software Developer | Events Practice</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Events</h1>
+    <h6 id="home"><a href="/">Home</a></h6>
+
+    <div id="container">
+
+        <div class="col">
+
+            <div id="first">
+                <h2>Counter:
+                    <span id="out">0</span>
+                </h2>
+    
+                <button id="btn">Click Me!</button>
+    
+                <h3 id="nice"></h3>
+            </div>
+    
+            <hr>
+    
+            <div id="second">
+                <h2>Colour:
+                    <span id="out2"></span>
+                </h2>
+    
+                <label for="btn2">Click for a random colour!</label>
+                <button id="btn2">Click Me!</button>
+                <br>
+                <label for="colour-select">Select a Colour Instead!</label>
+    
+                <select name="colours" id="colour-select">
+                    <option class="list-colours" value="red">Red</option>
+                    <option class="list-colours" value="green">Green</option>
+                    <option class="list-colours" value="blue">Blue</option>
+                    <option class="list-colours" value="orange">Orange</option>
+                    <option class="list-colours" value="yellow">Yellow</option>
+                    <option class="list-colours" value="purple">Purple</option>
+                    <option class="list-colours" value="aqua">Aqua</option>
+                    <option class="list-colours" value="lime">Lime</option>
+                    <option class="list-colours" value="pink">Pink</option>
+                    <option class="list-colours" value="brown">Brown</option>
+                </select>
+            </div>
+    
+            <hr>
+    
+            <div id="third" class="col col1">
+                <h2>Help your grandma get home!</h2>
+                <h6>Please dont put your actual bank details in :D</h6>
+
+                <form action="" class="bank-details">
+                    <div class="first-name-section">
+                        <label for="first-name">First Name: </label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="off" required>
+                    </div>
+
+                    <div class="last-name-section">
+                        <label for="last-name">Last Name: </label>
+                        <input type="text" name="last-name" id="last-name" autocomplete="off" required>
+                    </div>
+
+                    <hr id="splitter">
+
+                    <div class="card-details">
+
+                        <div>
+                            <label for="card-number">Card Number: </label>
+                            <input type="text" name="card-number" id="card-number" autocomplete="off" required>
+                        </div>
+
+                        <div>
+                            <label for="expiry-date">Expiry Date: </label>
+                            <input type="month" name="expiry-date" id="expiry-date" autocomplete="off" required>
+                        </div>
+
+                        <div>
+                            <label for="sec-code">Security Code: </label>
+                            <input type="text" name="sec-code" id="sec-code" autocomplete="off" required>
+                        </div>
+
+                    </div>                    
+                </form>
+
+                <button id="form-submit">Submit</button>
+
+                <hr id="splitter">
+
+                <p id="form-out"></p>
+    
+            </div>
+
+        </div>
+
+        <div class="col col2">
+
+            <h2>To Do List</h2>
+
+            <div class="list-container">
+                <div class="list-items">
+                    <ol id="todo-list">
+
+                    </ol>
+                </div>
+
+                <div id="td-btns">
+                    <button id="new-btn" class="td-btn">Add</button>
+                    <button id="rmv-btn" class="td-btn">Remove</button>
+                    <button id="edit-btn" class="td-btn">Edit</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col3">
+            <h2>Calculator</h2>
+            <h6>I'm a basic calc, I can't do your homework for you...</h6>
+
+            <div class="calc-container">
+
+                <div class="inout">
+
+                </div>
+
+                <div>
+                    <span class="calc-functions">
+                        <span class="add">
+                            <button id="add-btn" class="calc-btn">+</button>
+                        </span>
+                        <span class="sub">
+                            <button id="sub-btn" class="calc-btn">-</button>
+                        </span>
+                        <span class="mult">
+                            <button id="mult-btn" class="calc-btn">*</button>
+                        </span>
+                        <span class="div">
+                            <button id="div-btn" class="calc-btn">/</button>
+                        </span>
+                    </span>
+                </div>
+
+                <div>
+                    <span class="calc-123">
+                        <span class="one">
+                            <button id="one-btn" class="calc-btn">1</button>
+                        </span>
+                        <span class="two">
+                            <button id="two-btn" class="calc-btn">2</button>
+                        </span>
+                        <span class="three">
+                            <button id="three-btn" class="calc-btn">3</button>
+                        </span>
+                        <span class="delete">
+                            <button id="del-btn" class="calc-btn">&lt;-</button>
+                        </span>
+                    </span>
+                </div>
+
+                <div>
+                    <span class="calc-456">
+                        <span class="four">
+                            <button id="four-btn" class="calc-btn">4</button>
+                        </span>
+                        <span class="five">
+                            <button id="five-btn" class="calc-btn">5</button>
+                        </span>
+                        <span class="six">
+                            <button id="six-btn" class="calc-btn">6</button>
+                        </span>
+                        <span class="clear">
+                            <button id="clr-btn" class="calc-btn">C</button>
+                        </span>
+                    </span>
+                </div>
+
+                <div>
+                    <span class="calc-789">
+                        <span class="seven">
+                            <button id="seven-btn" class="calc-btn">7</button>
+                        </span>
+                        <span class="eight">
+                            <button id="eight-btn" class="calc-btn">8</button>
+                        </span>
+                        <span class="nine">
+                            <button id="nine-btn" class="calc-btn">9</button>
+                        </span>
+                        <span class="equal">
+                            <button id="eql-btn" class="calc-btn">=</button>
+                        </span>
+                    </span>
+                </div>
+
+                <div>
+                    <span class="calc-zero">
+                        <span class="zero">
+                            <button id="zero-btn" class="calc-btn">0</button>
+                        </span>                       
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    
+    
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
