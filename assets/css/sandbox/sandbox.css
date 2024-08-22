@@ -1,3 +1,10 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* navbar item highlighting */
 .ro-sandbox-li{
     font-weight: 600;
@@ -22,4 +29,59 @@
 
 .row a:hover{
     text-decoration: underline;
+}
+
+.ro-container{
+    width: 75%;
+    height: 100%;
+    border: solid thin black;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+#ro-h1{
+    /* border: solid thin black;
+    border-radius: 0.5rem; */
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.sandbox-links{
+    display: inline-block;
+    width: auto;
+}
+
+.sandbox-links a{
+    color: black;
+}
+
+.sandbox-links a:hover,
+.sandbox-links a:active {
+    text-decoration: underline;
+    color: #5c5c5c;
+}
+
+h2, .desc{
+    padding-left: 1rem;
+}
+
+#small-print{
+    font-size: 12px;
+}
+
+.big-print{
+    margin: 0;
+    padding-left: 1rem;
+}
+
+#split-div{
+    display: flex;
+    justify-content: center;
+}
+
+.js-proj-split{
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    /* border: none; */
 }
