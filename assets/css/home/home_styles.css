@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+.ro-mob-not{
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* main container (image/body) styles */
 .ro-main-container{
     display: flex;
@@ -23,7 +29,7 @@
     border-radius: 50%;
     background-color: #ffffff;
     border: thick solid #ffffff;
-    border: solid thin black;
+    border: solid 2px black;
     padding: 0;
     margin: 0;
     z-index: 2;
@@ -66,7 +72,7 @@
     height: 20rem;
     width: 30rem;
     background-color: #ffffff;
-    border: thin solid black;
+    border: 2px solid black;
     border-radius: 0.8rem;
     z-index: 1;
     transform: translateY(-75px);
@@ -118,6 +124,111 @@
 #new-content{
     margin: 2px;
     background-color: #ffffff;
+}
+
+.nsb-img-con{
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.next-section-container{
+    display: flex;
+    justify-content: center;
+}
+
+.ro-about-container, .ro-wins-container, .ro-contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: pink; */
+    width: 100%;
+    height: 100%;
+}
+
+#about-section, #wins-section, #contact-section{
+    margin-top: 30px;
+    height: 1000px;
+    /* background-color: red; */
+}
+
+#about-section h2, #wins-section h2, #contact-section h2{
+    color: #000000;
+    font-size: 2.75rem;
+    padding-top: 45px;
+}
+
+.ro-about-h2-con, .ro-wins-h2-con, .ro-contact-h2-con{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.ro-about-content, .ro-wins-content, .ro-contact-content{
+    width: 75%;
+    height: 65%;
+    /* background-color: lightpink; */
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+.ro-img-squat{
+    width: 65%;
+    height: 65%;
+}
+
+.ro-img-squat{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.ro-split-con{
+    width: 70%;
+}
+
+.ro-col-con{
+    display: flex;
+    height: 100%;
+}
+
+.ro-txt-con{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#ro-about-c2 .ro-txt-con{
+    padding-top: 0;
+}
+
+.ro-txt-con p{
+    font-size: large;
+}
+
+.ro-txt-con b{
+    font-weight: 600;
+}
+
+.ro-about-col{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    /* height: 100%; */
+}
+
+.lead{
+    margin-bottom: 0;
+}
+
+#contact-section h2{
+    /* color: white; */
+    padding-top: 100px;
 }
 
 @media(max-width: 390px){
