@@ -188,6 +188,7 @@
 .ro-split-con{
     width: 70%;
     margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .ro-col-con{
@@ -223,6 +224,7 @@
     /* height: 100%; */
 }
 
+/* override bootstrap */
 .lead{
     margin-bottom: 0;
 }

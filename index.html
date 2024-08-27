@@ -20,8 +20,9 @@
 </head>
 
 <body>
+    <div id="home-page"> <!-- SEPARATE SECTIONS --> </div>  
 
-    <section class="ro-nav-section">
+    <section id="home-page" class="ro-nav-section">
         <nav class="ro-navbar navbar navbar-expand-xxl fixed-top">
             <div class="container-fluid">
                 <div class="ro-brand-bs">
@@ -50,11 +51,11 @@
                         <ul class="ro-nav-ar navbar-nav mb-2 mb-lg-0">
                         
                             <li class="nav-item">
-                                <a id="ro-nav-home" class="active ro-nav-s ro-brand-s ro-bg-def nav-link" aria-current="page" href="index.html">Home</a>
+                                <a id="ro-nav-home" class="active ro-nav-s ro-brand-s ro-bg-def nav-link" aria-current="page" href="#home-page">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a id="ro-nav-about" class="ro-nav-s ro-brand-s ro-bg-def nav-link" aria-current="page" href="#bs-about-section">About</a>
+                                <a id="ro-nav-about" class="ro-nav-s ro-brand-s ro-bg-def nav-link" aria-current="page" href="#about-sec-sep">About</a>
                             </li>
                             
                             <!-- <li class="nav-item">
@@ -131,18 +132,7 @@
 
         </section>
 
-        <!-- <div class="next-section-container">
-            <a href="" id="nxt-sec-btn" class="next-section-button">
-                <div class="nsb-img-con">
-                    <svg width="75px" height="75px" viewBox="0 0 30 30" id="_22_-_Down" data-name="22 - Down" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Path_209" data-name="Path 209" d="M16,1A15,15,0,1,0,31,16,15.007,15.007,0,0,0,16,1Zm0,2A13,13,0,1,1,3,16,13.006,13.006,0,0,1,16,3Z" transform="translate(-1 -1)" fill-rule="evenodd"/>
-                        <path id="Path_210" data-name="Path 210" d="M21.293,12.293,16,17.586l-5.293-5.293a1,1,0,0,0-1.414,1.414l6,6a1,1,0,0,0,1.414,0l6-6a1,1,0,1,0-1.414-1.414Z" transform="translate(-1 -1)" fill-rule="evenodd"/>
-                      </svg>
-                </div>
-            </a>
-        </div> -->
-
-        <div class="ro-sec-sep"> <!-- SEPARATE SECTIONS --> </div>       
+        <div id="about-sec-sep" class="ro-sec-sep"> <!-- SEPARATE SECTIONS --> </div>       
 
         <section id="bs-about-section">
             <div class="ro-about-h2-con">
@@ -157,10 +147,10 @@
                 <div class="ro-about-container">
                     <div class="row align-items-start">
                         <!-- Column 1 -->
-                        <div class="ro-col col-12 col-sm-6 col-md-4 mb-4">
+                        <div class="ro-col col-12 col-sm-6 col-md-4">
                             <div class="ro-img-con order-1 order-md-0 mb-3">
                                 <div class="ro-img">
-                                    <img class="ro-img-squat img-fluid" src="assets/images/self/hobbies/gym/jpg/squat-1080-1080.jpg" alt="Squat Exercise">
+                                    <img class="ro-img-squat img-fluid" src="assets/images/self/hobbies/cycle/jpg/cycle-1080-1080.jpg" alt="Squat Exercise">
                                 </div>
                             </div>
 
@@ -176,29 +166,10 @@
                         </div>
         
                         <!-- Column 2 -->
-                        <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="ro-img-con order-1 order-md-0 mb-3">
                                 <div class="ro-img">
-                                    <img class="ro-img-squat img-fluid" src="assets/images/self/hobbies/snowdon/jpg/me-snowdon-1080-1080.jpg" alt="Snowdon Hike">
-                                </div>
-                            </div>
-
-                            <div class="ro-split-con mb-3">
-                                <hr>
-                            </div>
-
-                            <div class="ro-txt-con order-2 order-md-1 mb-3">
-                                <p class="lead fs-5 fs-md-4">
-                                    I aim to keep life <b>enjoyable</b> and lighthearted while staying focused on my goals. Balancing <b>fun</b> with determination helps me tackle challenges with a <b>positive</b> outlook and creativity.
-                                </p>
-                            </div>                            
-                        </div>
-        
-                        <!-- Column 3 -->
-                        <div class="col-12 col-sm-6 col-md-4 mb-4">
-                            <div class="ro-img-con order-1 order-md-0 mb-3">
-                                <div class="ro-img">
-                                    <img class="ro-img-squat img-fluid" src="assets/images/self/hobbies/cycle/jpg/cycle-1080-1080.jpg" alt="Cycling">
+                                    <img class="ro-img-squat img-fluid" src="assets/images/self/hobbies/gym/jpg/squat-1080-1080.jpg" alt="Snowdon Hike">
                                 </div>
                             </div>
 
@@ -209,6 +180,25 @@
                             <div class="ro-txt-con order-2 order-md-1 mb-3">
                                 <p class="lead fs-5 fs-md-4">
                                     I'm passionate about the <b>outdoors</b> whether it's hiking, cycling, or golf. These help me stay fit, <b>balanced</b>, and provide a great way to recharge and clear my mind.
+                                </p>
+                            </div>                            
+                        </div>
+        
+                        <!-- Column 3 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="ro-img-con order-1 order-md-0 mb-3">
+                                <div class="ro-img">
+                                    <img class="ro-img-squat img-fluid" src="assets/images/self/hobbies/snowdon/jpg/me-snowdon-1080-1080.jpg" alt="Cycling">
+                                </div>
+                            </div>
+
+                            <div class="ro-split-con mb-3">
+                                <hr>
+                            </div>
+
+                            <div class="ro-txt-con order-2 order-md-1 mb-3">
+                                <p class="lead fs-5 fs-md-4">
+                                    I aim to keep life <b>enjoyable</b> and lighthearted while staying focused on my goals. Balancing <b>fun</b> with determination helps me tackle challenges with a <b>positive</b> outlook and creativity.
                                 </p>
                             </div>
                         </div>
