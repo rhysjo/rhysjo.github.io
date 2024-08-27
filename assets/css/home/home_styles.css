@@ -4,12 +4,6 @@
     justify-content: center;
 }
 
-.ro-mob-not{
-    background-color: #ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 /* main container (image/body) styles */
 .ro-main-container{
     display: flex;
@@ -138,15 +132,18 @@
     justify-content: center;
 }
 
-.ro-about-container, .ro-wins-container, .ro-contact-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* background-color: pink; */
+.ro-about-container
+/* ,.ro-wins-container
+,.ro-contact-container */
+{    
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 0.5rem;
+    padding: 25px;
     width: 100%;
     height: 100%;
 }
+
 
 #about-section, #wins-section, #contact-section{
     margin-top: 30px;
@@ -154,10 +151,13 @@
     /* background-color: red; */
 }
 
-#about-section h2, #wins-section h2, #contact-section h2{
+.ro-h2 h2, #wins-section h2, #contact-section h2{
     color: #000000;
     font-size: 2.75rem;
-    padding-top: 45px;
+    /* padding-top: 45px; */
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    margin-bottom: 0;
 }
 
 .ro-about-h2-con, .ro-wins-h2-con, .ro-contact-h2-con{
@@ -187,6 +187,7 @@
 
 .ro-split-con{
     width: 70%;
+    margin: 0 auto;
 }
 
 .ro-col-con{
@@ -226,9 +227,11 @@
     margin-bottom: 0;
 }
 
-#contact-section h2{
-    /* color: white; */
-    padding-top: 100px;
+/* Separate sections */
+.ro-sec-sep{
+    width: 100%;
+    height: 7rem;
+    /* background-color: red; */
 }
 
 @media(max-width: 390px){
