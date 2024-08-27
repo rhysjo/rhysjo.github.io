@@ -43,6 +43,7 @@ main{
 #ro-h1{
     /* border: solid thin black;
     border-radius: 0.5rem; */
+    margin-top: 7rem;
     background-color: #ffffff;
     margin-bottom: 1rem;
 }
