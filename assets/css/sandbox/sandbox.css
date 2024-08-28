@@ -5,6 +5,7 @@ main{
     flex-direction: column;
 }
 
+
 /* navbar item highlighting */
 .ro-sandbox-li{
     font-weight: 600;
@@ -26,11 +27,9 @@ main{
     font-size: 1.5rem;
 }
 
-
 .row a:hover{
     text-decoration: underline;
 }
-
 
 .ro-container{
     width: 75%;
